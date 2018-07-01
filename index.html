@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>GeometryIt</title>
+  <meta name="description" content="rabbitWerks project: GeometryIt! - Find the area of simple shapes">
+  <meta name="author" content="Sean Becker - Techtronix Web - rabbitWerks">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+	<link rel="manifest" href="favicons/site.webmanifest">
+	<link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#0b1f2b">
+	<link rel="shortcut icon" href="favicons/favicon.ico">
+	<meta name="msapplication-TileColor" content="#0b1f2b">
+	<meta name="msapplication-config" content="favicons/browserconfig.xml">
+	<meta name="theme-color" content="#0b1f2b">
+  
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+	<div class="head">
+			<h1>GeometryIt</h1>
+			<h3>Find the area of simple shapes easily!</h3>
+			<h5>-volume coming soon-</h5>
+	</div>
+	<div class="container">
+		
+		<div class="application">
+			<h3>What kind of shape is it?</h3>
+			
+			<ul class="shapeSelect">
+				<li><button class="shape selected" id="square">Square</button></li>
+				<li><button class="shape" id="tri">Triangle</button></li>
+				<li><button class="shape" id="circ">Circle</button></li>
+			</ul>
+			<div id="sq-tri-inputs">
+				<label for="heightInput"><h3>Height</h3></label>
+				<input type="number" id="heightInput" name="heightInput" placeholder="0">
+
+				<label for="widthInput"><h3>Width</h3></label>
+				<input type="number" id="widthInput" name="widthInput" placeholder="0">
+			</div>
+			
+			<div id="circ-inputs" class="hidden">
+				<!-- <label for="diameterInput"><h3>Diameter</h3></label>
+				<input type="number" id="diameterInput" name="diameterInput"> -->
+
+				<label for="radiusInput"><h3>Radius</h3></label>
+				<input type="number" id="radiusInput" name="radiusInput">
+
+				
+			</div>
+			<label for="unitType"><h4>Measurement Unit</h4></label>
+			<select name="unitType" id="unitType">
+				<option value="in.">inches</option>
+				<option value="cm.">centimeters</option>
+				<option value="m.">meters</option>
+			</select>
+			<button id="run">Find Area</button>
+		</div>
+		
+		<div class="resultPanel">
+			<h3 id="result">- RESULT -</h3>
+		</div>
+		<div class="footer">
+			<a href="http://www.techtronixweb.com"><h6 id="ttx">Techtronix Web</h6></a>
+			<h6 id="rbtWx">rabbitWerks.</h6>
+		</div>
+
+	</div>
+  <script src="js/app.js"></script>
+</body>
+</html>
